@@ -1,0 +1,6 @@
+<h1>Businesses#index</h1>
+<% @businesses.each do |business| %>
+<%= render partial: "business", locals: {business: business } %>
+<hr>
+
+<% end %>

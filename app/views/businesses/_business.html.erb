@@ -1,0 +1,9 @@
+<%= link_to business.company_name, "/businesses/#{business.id}", method: :get %>
+<br>
+<%= business.company_profession %>
+<br>
+<%= business.company_street_address %>
+<br>
+
+<%= link_to "Delete", "/businesses/#{business.id}", method: :delete %>
+

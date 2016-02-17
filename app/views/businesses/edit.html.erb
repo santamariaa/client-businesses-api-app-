@@ -1,0 +1,22 @@
+<h1>Update business</h1>
+
+<%= form_tag '/businesses/:id', method: :patch do%>
+
+   <div>
+    <%= label_tag :company_name%>
+    <%= text_field_tag :company_name%>
+    </div>
+
+    <div>
+    <%= label_tag :company_profession %>
+    <%= text_field_tag :company_profession %>
+    </div>
+
+     <div>
+    <%= label_tag :company_street_address%>
+    <%= text_field_tag :company_street_address%>
+    </div>
+
+    <%= submit_tag "Edit Business" %> 
+
+<% end %>
